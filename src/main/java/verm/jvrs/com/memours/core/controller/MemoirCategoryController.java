@@ -25,7 +25,7 @@ public class MemoirCategoryController {
     @PutMapping("/addMemoirToGroup/{category}/{memoir}")
     public MemoirCategoryResponse addMemoir(@Valid @PathVariable("memoir") String memoir,
                                             @Valid @PathVariable("category") String category) throws Exception {
-        return memoirCategoryBusiness.addRequirement(memoir, category);
+        return memoirCategoryBusiness.addToCategory(memoir, category);
     }
 
 }

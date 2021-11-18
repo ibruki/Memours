@@ -21,7 +21,7 @@ public class MemoirCategoryBusiness {
                                 (MemoirCategoryConverter.convertMemoirCategoryRequestToMemoirCategoryEntity(memoirCategoryRequest))));
     }
 
-    public MemoirCategoryResponse addRequirement(String memoir, String category) throws Exception {
+    public MemoirCategoryResponse addToCategory(String memoir, String category) throws Exception {
         return MemoirCategoryConverter.
                 convertMemoirCategoryEntityToMemoirCategoryResponse(memoirCategoryService.addMemoir(memoir, category));
     }
